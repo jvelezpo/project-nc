@@ -1,8 +1,12 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `NodeConf Colombia 2020 | June 26th and 27th, 2020 - Medellín`,
+    titleShort: `NodeConf Colombia 2020`,
+    description: `NodeConf Colombia 2020 is the first international event focused on the entire Node.js ecosystem.
+    It’s a non-profit event, where our attendees will be sharing in an environment of inclusion and respect, having access to relevant information through talks, workshops, and great experiences with the Colombian Node community.`,
+    author: `@NodeConfCo`,
+    image: 'https://raw.githubusercontent.com/nodeconf/colombia/d5eaf4bba41a10a7a02f40ff28320207046c18a7/images/social.png',
+    url: 'https://colombia.nodeconf.com/'
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -24,11 +28,12 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/logo.png`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
+    `gatsby-plugin-sass`
   ],
 }
