@@ -1,0 +1,22 @@
+.menu-component {
+  &.menu {
+    text-transform: uppercase;
+    padding: 40px 15px;
+    height: 350px;
+    background: #258a45c7;
+    display: block;
+    position: fixed;
+    top: 20%;
+    color: #E6D027;
+    clip-path: polygon(0 0, 100% 15%, 100% 85%, 0% 100%);
+
+    .link-section {
+      cursor: pointer;
+      width: fit-content;
+      line-height: 2;
+      &:hover {
+        border-bottom: 2px solid;
+      }
+    }
+  }
+}
