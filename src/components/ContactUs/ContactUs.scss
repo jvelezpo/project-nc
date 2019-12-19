@@ -1,5 +1,91 @@
 .contact-us-component {
   &.contact-us {
+    display: flex;
+    min-height: 400px;
+    align-items: center;
+    justify-content: center;
 
+    .description {
+      display: flex;
+      flex-direction: column;
+    }
+    .stay-tuned {
+      display: flex;
+      flex-direction: column;
+      
+      .title {
+        font: Bold 32px/39px Lato;
+        color: #E6D027;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+      }
+
+      .email {
+        display: flex;
+        flex-direction: row;
+        margin: 30px 0;
+        input {
+          background: #EBEBEB 0% 0% no-repeat padding-box;
+          border: none;
+          padding-left: 10px;
+          width: 385px;
+          height: 48px;
+          font: Regular 16px/26px Montserrat;
+          color: #707070;
+        }
+        button {
+          background: #E6D027 0% 0% no-repeat padding-box;
+          width: 105px;
+          height: 48px;
+          font: Regular 16px/26px Montserrat;
+          color: #121112;
+          cursor: pointer;
+        }
+      }
+
+      .social {
+        display: flex;
+        justify-content: space-between;
+
+        .social-icon {
+          clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+          background-color: #86A120;
+          color: #fff;
+          height: 60px;
+          width: 60px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-right: 10px;
+          cursor: pointer;
+
+          &.icon-twitter {
+            font-size: 45px;
+          }
+          &.icon-instagram {
+            font-size: 32px;
+          }
+          &.icon-facebook {
+            font-size: 35px;
+          }
+        }
+
+        .icons {
+          display: flex;
+        }
+
+        .text {
+          text-align: right;
+          .contact-us {
+            font: Bold 24px/29px Lato;
+            color: #E6D027;
+          }
+          .nodeconf-email {
+            font: Regular 24px/41px Montserrat;
+            color: #86A120;
+          }
+        }
+      }
+    }
   }
 }

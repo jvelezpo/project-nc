@@ -1,0 +1,63 @@
+// estilos para los titulos y descripcion de cada sesion
+
+.section__title {
+    margin-top: em(16px);
+    margin-bottom: em(16px);
+    font-size: em(38px);
+    text-align: center;
+    font-family: var(--font-title);
+    font-weight: var(--bold);
+    text-transform: uppercase;
+  
+    @media only screen and (min-width : 1024px){
+        font-size: em(48px);    
+    }
+  }
+  
+  .section__description {
+    text-align: center;
+    margin-top: em(16px);
+    margin-bottom: em(16px);
+    
+    @media only screen and (min-width : 1024px){
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;   
+    }
+  }
+  
+  // estilos para la informacion 0.1, 0.2, 0.3
+  .aside-data{
+  
+    &__title,
+    &__subtitle {
+      font-family: var(--font-title);
+      font-weight: var(--bold);
+    }
+  
+    &__title{
+      font-size: em(48px);
+    }
+  
+    &__subtitle{
+      font-size: em(24px);
+      margin-top: var(--gutter);
+      margin-bottom: var(--gutter);
+    }
+  
+    &__description{
+      font-size: em(16px);
+      margin-top: var(--gutter);
+      margin-bottom: var(--gutter);
+    }
+  }
+  
+  // estilo para los botones
+  .btn{
+    display: inline-block;
+    cursor: pointer;
+    padding: .4em 3em;
+    border: 2px solid;
+    text-decoration: none;
+  }
+  

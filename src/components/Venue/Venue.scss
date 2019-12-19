@@ -1,5 +1,37 @@
 .venue-component {
   &.venue {
+    display: flex;
+    margin: 50px 0;
 
+    .rutan-image {
+      width: 50%;
+      filter: grayscale(100%);
+    }
+
+    .content {
+      width: 50%;
+      background-color: #e6d027;
+      font: Regular 16px/26px Montserrat;
+      color: #FFFFFF;
+      padding: 30px;
+      line-height: 1.4;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .title {
+        font: Bold 48px/57px Lato;
+        color: #ebebeb;
+      }
+
+      .reservation {
+        border: 2px solid #2D9983;
+        background-color: #e6d027;
+        font: Regular 16px/26px Montserrat;
+        color: #2D9983;
+        width: fit-content;
+        cursor: pointer;
+      }
+    }
   }
 }
