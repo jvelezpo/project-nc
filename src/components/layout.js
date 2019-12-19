@@ -9,7 +9,8 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
-import Header from "./header"
+import Header from "./Header/header"
+import Menu from "./Menu/Menu"
 import "./layout.scss"
 
 const Layout = ({ children }) => {
@@ -25,6 +26,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
+      <Menu />
       <Header siteTitle={data.site.siteMetadata.title} />
       <div
         style={{
@@ -36,7 +38,7 @@ const Layout = ({ children }) => {
       >
         <main>{children}</main>
         <footer>
-          Nodeconf Colombia is an event by Mantid LLC - Code of conduct
+          NodeConf Colombia is an event by Mantid LLC - <a href="http://jsconf.com/codeofconduct.html" target="_blank" rel="noopener noreferrer">Code of conduct</a>
         </footer>
       </div>
     </>
