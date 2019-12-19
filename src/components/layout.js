@@ -11,6 +11,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./Header/header"
 import Menu from "./Menu/Menu"
+import Footer from "./Footer/Footer"
 import "./layout.scss"
 
 const Layout = ({ children }) => {
@@ -37,10 +38,8 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
-        <footer>
-          NodeConf Colombia is an event by Mantid LLC - <a href="http://jsconf.com/codeofconduct.html" target="_blank" rel="noopener noreferrer">Code of conduct</a>
-        </footer>
       </div>
+      <Footer />
     </>
   )
 }
