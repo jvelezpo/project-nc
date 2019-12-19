@@ -9,6 +9,7 @@
     top: 20%;
     color: #E6D027;
     clip-path: polygon(0 0, 100% 15%, 100% 85%, 0% 100%);
+    z-index: 1000;
 
     .link-section {
       cursor: pointer;

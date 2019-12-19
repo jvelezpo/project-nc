@@ -1,17 +1,17 @@
 .contact-us-component {
   &.contact-us {
     display: flex;
+    min-height: 400px;
+    align-items: center;
+    justify-content: center;
 
     .description {
       display: flex;
       flex-direction: column;
-      flex-grow: 1;
     }
     .stay-tuned {
       display: flex;
       flex-direction: column;
-      flex-grow: 1;
-      max-width: 50%;
       
       .title {
         font: Bold 32px/39px Lato;
