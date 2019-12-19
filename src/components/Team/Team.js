@@ -15,6 +15,9 @@ import "./Team.scss"
 
 const Team = () => (
   <div className="team-component team">
+    <div className="title">
+      Team
+    </div>
     <div className="images">
       <Adrian />
       <Julian />
@@ -27,7 +30,7 @@ const Team = () => (
       <Hamilton />
       <Stiwar />
     </div>
-    <div className="oe" />
+    <div className="triangle" />
   </div>
 )
 

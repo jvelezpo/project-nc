@@ -1,5 +1,31 @@
 .about-component {
   &.about {
+    .triangle {
+      clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+      height: 100px;
+      width: 100%;
+      background-color: #2d9983;
+    }
 
+    .title {
+      background-color: #2d9983;
+      text-align: center;
+      font: Bold 48px/57px Lato;
+      color: #e6d027;
+      padding: 30px 0;
+    }
+
+    .description {
+      text-align: center;
+      font: Regular 24px/41px Montserrat;
+      color: #ebebeb;
+      background-color: #2d9983;
+      display: flex;
+      justify-content: center;
+      padding-bottom: 20px;
+      .content {
+        max-width: 600px;
+      }
+    }
   }
 }

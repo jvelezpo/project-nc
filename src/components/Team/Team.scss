@@ -1,9 +1,16 @@
 .team-component {
   &.team {
-    
+    .title {
+      font: Bold 48px/57px Lato;
+      color: #e6d027;
+      padding: 30px 0;
+      background-color: #2d9983;
+      text-align: center;
+    }
+
     .images {
       padding: 30px 0;
-      background-color: #2D9983;
+      background-color: #2d9983;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
@@ -13,11 +20,11 @@
         margin: 5px;
       }
     }
-    .oe {
+    .triangle {
       clip-path: polygon(50% 100%, 0 -1%, 100% -1%);
       height: 100px;
       width: 100%;
-      background-color: #2D9983;
+      background-color: #2d9983;
     }
   }
 }
