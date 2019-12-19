@@ -8,6 +8,7 @@ import Venue from "../components/Venue/Venue"
 import About from "../components/About/About"
 import Team from "../components/Team/Team"
 import ContactUs from "../components/ContactUs/ContactUs"
+import "./styles.scss"
 
 const IndexPage = () => (
   <Layout>
