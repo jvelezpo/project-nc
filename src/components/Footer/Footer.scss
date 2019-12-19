@@ -1,0 +1,21 @@
+.footer-component {
+  &.footer {
+    background: #258A45;
+    clip-path: polygon(50% 0%, 100% 30%, 100% 100%, 0 100%, 0 30%);
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font: Bold 24px/29px Lato;
+    color: #EBEBEB;
+    padding-top: 25px;
+
+    a {
+      margin-left: 5px;
+      color: #EBEBEB;
+      &:hover {
+        color: #039be5;
+      }
+    }
+  }
+}
