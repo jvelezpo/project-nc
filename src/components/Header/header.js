@@ -2,6 +2,7 @@ import PropTypes from "prop-types"
 import React from "react"
 
 import Logo from '../images/logo'
+import Medellin from '../images/medellin'
 
 import "./header.scss"
 
