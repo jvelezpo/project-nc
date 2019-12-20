@@ -18,8 +18,8 @@
       background-color: var(--four);
       font-family: var(--font-subtitle);
       font-weight: var(--normal);
-      font-size: 16/26px;
-      color: var(--v-primary);
+      font-size: 14px;
+      color: var(--p-primary);
       padding: var(--gutter);
       line-height: 1.5;
       display: flex;
@@ -35,6 +35,18 @@
         font-size: 48px/57px;
         color: var(--v-primary);
       }
+      .subtitle {
+        font-family: var(--font-subtitle);
+        font-weight: var(--semibold);
+        font-size: 32px;
+        color: var(--v-primary);
+      }
+      .hotel {
+        width: 250px;
+        @media only screen and (max-width: 1024px) {
+          width: 230px;
+        }
+      }
 
       .reservation {
         border: 2px solid var(--primary);
@@ -46,6 +58,7 @@
         width: fit-content;
         cursor: pointer;
         margin-top: 20px;
+        padding: 5px;
       }
     }
   }

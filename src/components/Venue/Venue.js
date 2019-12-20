@@ -1,6 +1,7 @@
 import React from "react"
 
 import RutaN from "../images/ruta-n"
+import Hotel10 from "../images/hotel10"
 
 import "./Venue.scss"
 
@@ -17,7 +18,23 @@ const Venue = () => (
         consectetur adipiscing elit. Vivamus lacinia quis arcu non elementum.
         Phasellus vestibulum rutrum tincidunt. Maecenas vitae ex turpis.
       </div>
-      <button className="reservation">Reservation</button>
+      <div className="subtitle">Hotel Recommend</div>
+      <a
+        href="https://www.diezhotel.com/"
+        target="__blank"
+        rel="noopener noreferrer"
+      >
+        <figure className="hotel">
+          <Hotel10 />
+        </figure>
+      </a>
+      <a
+        href="https://reservations.travelclick.com/103293?groupID=2323678"
+        className="reservation"
+        target="__blank"
+      >
+        Reservation Hotel
+      </a>
     </div>
   </div>
 )

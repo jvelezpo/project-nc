@@ -49,6 +49,7 @@
 
   .header-left{
     display: none;
+    padding-left: 40px;
 
     @media screen and (min-width : 64em) {
       display: block;
@@ -146,6 +147,7 @@
     position: absolute;
     bottom: 25%;
     right: var(--gutter);
+    padding-right: 40px;
 
     @media screen and (max-width : 374px) {
       display: none;
