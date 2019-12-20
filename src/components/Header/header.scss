@@ -1,56 +1,218 @@
-.header-component {
-  &.header {
-    margin-bottom: 1.45rem;
-    background-size: cover;
-    height: 600px;
-  }
+.banner {
+  background-image: url(../../images/medellin_banner.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  clip-path: polygon(50% 0%, 100% 0, 100% 93%, 50% 100%, 0 93%, 0 0);
+  position: relative;
+  
 
-  > .gatsby-image-wrapper {
-    position: absolute !important;
-    top: 0;
-    width: 100%;
-    height: 600px;
-    z-index: -2;
-  }
-
-  .over {
-    background: transparent linear-gradient(111deg, #2D9983 0%, #258A45 50%, #86A120 100%) 0% 0% no-repeat padding-box;;
-    width: 100%;
-    height: 600px;
-    z-index: -1;
-    opacity: 0.5;
+  &::before {
+    content: '';
     position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(111deg, #2D9983 0%, #258A45 50%, #86A120 100%);
+    opacity: .70;
+  }
+}
+
+
+.header-container {
+  position: relative;
+  height: 100vh;
+  
+  @media screen and (max-width : 75em){
+    padding-left: var(--gutter);
+    padding-right: var(--gutter);
+  }
+  
+  @media screen and (min-width : 64em) {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr;
+
+    align-items: center;
+  } 
+
+  .header-left{
+    display: none;
+
+    @media screen and (min-width : 64em) {
+      display: block;
+      width: 250px;
+      justify-self: right;
+    }
+    
+    &__title{
+      color: var(--v-primary);
+    }
+    
+    &__subtitle{
+      color: var(--four);
+    }
+
+    &__description{
+      color: var(--v-primary);
+    }
+    
   }
 
-  .conference {
-    display: flex;
-    justify-content: center;
-    height: inherit;
-    align-items: center;
+  .header-center{
 
-    .logo {
-      width: 300px;
-      color: #fff;
-      line-height: 1.5;
-      font-weight: bold;
-      text-decoration: none;
+    @media screen and (min-width : 45em) {
+      text-align: center;
+    } 
 
-      .title {
-        font: Bold 44px/72px Lato;
-        letter-spacing: 3px;
-        color: #EBEBEB;    
-      }
+    .logo--main {
+      display: block;
+      padding-top: var(--gutter);
+      margin-left: auto;
+      margin-right: auto;
+      width: 200px;
+      margin-bottom: 2em;
 
-      .subtitle {
-        font-size: 23px;
-        letter-spacing: 3.2px;
-        color: #EBEBEB;
-        font-weight: 100;
-      }
-
-      .gatsby-image-wrapper {
+      @media screen and (min-width : 30em) {
         width: 250px;
+      } 
+
+      @media screen and (min-width : 75em) {
+        width: 300px;
+      }
+
+    }
+
+    .header-title {
+      text-transform: uppercase;
+      font-size: 42px;
+      color: var(--v-primary);
+
+      @media screen and (min-width : 30em) {
+        font-size: 54px;
       }
     }
+
+    .header-subtitle{
+      font-size: 24px;
+      color: var(--v-primary);
+
+      @media screen and (min-width : 30em) {
+        font-size: 28px;
+      }
+    }
+
+    .btn-cta{
+      display: inline-block;
+      position: absolute;
+      padding: .4em 3em;
+      bottom: 10%;
+      margin: var(--gutter) 0;
+      font-family: var(--font-title);
+      font-weight: var(--bold);
+      border-color: var(--four);
+      color: var(--four);
+      background-color: transparent;
+      font-size: 24px;
+      cursor: pointer;
+      border: 2px solid;
+      text-decoration: none;
+
+      @media screen and (min-width : 30em) {
+        position: initial;
+      }
+
+      @media screen and (min-width : 64em) {
+        margin-top: 48px;
+      }
+    }
+    
   }
+
+  // .header-right
+  .calendar{
+    display: inline-block;
+    position: absolute;
+    bottom: 25%;
+    right: var(--gutter);
+
+    @media screen and (max-width : 374px) {
+      display: none;
+    }
+
+   @media screen and (min-width : 30em) {
+      bottom: 15%;
+    }
+
+    @media screen and (min-width : 64em) {
+      position: initial;
+      justify-self: center;
+    }
+
+    &__content{
+      margin: var(--gutter) 0;
+      width: 100px;
+      background-color: var(--secondary);
+      opacity: .80;
+      text-transform: uppercase;
+      
+      @media screen and (min-width : 30em) {
+        width: 125px;
+      }
+
+      @media screen and (min-width : 64em) {
+        width: 170px;
+      }
+    }
+
+      &__month{
+        font-family: var(--font-title);;
+        font-weight: var(--bold);;
+        text-align: center;
+        color: var(--four);
+        background-color: var(--primary);
+      }
+
+      &__data{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 var(--gutter);
+        font-size: 18px;
+
+        @media screen and (min-width : 30em) {
+          font-size: 24px;
+        }
+
+        @media screen and (min-width : 64em) {
+          font-size: 32px;
+        }
+      }
+
+        &__info{
+          color: var(--four);
+        }
+
+        &__format,
+        &__day{
+          font-family: var(--font-title);
+          font-weight: var(--bold);
+          color: var(--v-primary);
+        }
+
+        &__day{
+          padding: 0 var(--gutter);
+          text-align: right;
+          font-size: 40px;
+
+          @media screen and (min-width : 30em) {
+            font-size: 48px;
+          }
+
+          @media screen and (min-width : 64em) {
+            font-size: 70px;
+          }
+        }
+
+  }
+
 }
