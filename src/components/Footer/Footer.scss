@@ -1,21 +1,23 @@
 .footer-component {
-  &.footer {
-    background: #258A45;
-    clip-path: polygon(50% 0%, 100% 30%, 100% 100%, 0 100%, 0 30%);
-    height: 180px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font: Bold 24px/29px Lato;
-    color: #EBEBEB;
-    padding-top: 25px;
+  background-color: var(--secondary);
+  height: 140px;
+  color: var(--v-primary);
+  font-size: 24px/29px;
+  display: flex;
+  align-items: center;
+  font-family: var(--font-title);
+  font-weight: var(--bold);
+  justify-content: center;
+  padding: 10px;
+  clip-path: polygon(50% 0%, 100% 30%, 100% 100%, 0 100%, 0 30%);
+  
+  a {
+    margin-left: 5px;
+    color: var(--v-primary);
 
-    a {
-      margin-left: 5px;
-      color: #EBEBEB;
-      &:hover {
-        color: #039be5;
-      }
+    &:hover {
+      color: var(--third);
+      text-decoration: underline;
     }
   }
 }

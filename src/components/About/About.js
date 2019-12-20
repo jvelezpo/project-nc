@@ -3,7 +3,7 @@ import React from "react"
 import "./About.scss"
 
 const About = () => (
-  <div className="about-component about">
+  <div className="about-component about" id="about">
     <div className="triangle" />
     <div className="title">
       About
