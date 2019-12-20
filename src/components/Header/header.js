@@ -6,10 +6,10 @@ import Medellin from '../images/medellin'
 
 import "./header.scss"
 
-const Header = ({ siteTitle }) => (
-
-
+const Header = () => (
   <header className="header l-container--full  banner">
+    <Medellin className="medellin" />
+    <div className="over" />
     <div className="header-container  l-container">
       <aside className="header-left  aside-data">
         <h2 className="header-left__title  aside-data__title">0.1</h2>
@@ -19,22 +19,16 @@ const Header = ({ siteTitle }) => (
         </p>
       </aside>
       <div className="header-center  header-description">
-        <a
-          href="/"
-          className="logo--main"
-        >
+        <a href="/" className="logo--main">
           <Logo />
         </a>
 
         <h1 className="title  header-title">colombia</h1>
         <p className="subtitle  header-subtitle">NodeConfCo 2020</p>
 
-        <a 
-          href="#"
-          className="btn-cta"
-          >
-            Saber más
-        </a>
+        <button className="btn-cta">
+          Saber más
+        </button>
       </div>
 
       <div className="header-right  calendar">

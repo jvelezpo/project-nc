@@ -9,11 +9,11 @@ import Speaker4 from "./images/speaker4";
 import "./Speakers.scss"
 
 const Speakers = () => (
-  
+
   <section className="speakers-container  l-container--full  l-inner-p">
 
-    <div className="section-speakers  l-container">  
-    
+    <div className="section-speakers  l-container">
+
       <h2 className="section-speakers__title  section__title">speakers</h2>
 
       <div className="content-figure">
@@ -21,77 +21,56 @@ const Speakers = () => (
         <article className="section-speakers__content">
 
           <figure className="section-speakers__img">
-              <Speaker1 />
+            <Speaker1 />
           </figure>
           <p className="section-speakers__description">Over the last 2 years, Anna has been one of the most active contributors to Node.js core. Currently pursuing a Master’s degree in mathematics in Germany, she is fueled by a passion for Node and its community.</p>
           <div className="section-speakers__data">
             <h3 className="section-speakers__name">Anna Henningsen</h3>
-            <a
-              href="#" 
-              className="section-speakers__social icon-twitter"
-              >
-            </a>
+            <button className="section-speakers__social icon-twitter" />
           </div>
 
         </article>
 
         <article className="section-speakers__content">
-          
+
           <figure className="section-speakers__img">
-              <Speaker2 />
+            <Speaker2 />
           </figure>
           <p className="section-speakers__description">Over the last 2 years, Anna has been one of the  most active contributors to Node.js core. Currently pursuing a Master’s degree in mathematics in Germany, she is fueled by a passion for Node and its community.</p>
           <div className="section-speakers__data">
             <h3 className="section-speakers__name">Anna Henningsen</h3>
-            <a
-              href="#" 
-              className="section-speakers__social icon-twitter"
-              >
-            </a>
+            <button className="section-speakers__social icon-twitter" />
           </div>
 
         </article>
 
         <article className="section-speakers__content">
-          
+
           <figure className="section-speakers__img">
-              <Speaker3 />
+            <Speaker3 />
           </figure>
           <p className="section-speakers__description">Over the last 2 years, Anna has been one of the most active contributors to Node.js core. Currently pursuing a Master’s degree in mathematics in Germany, she is fueled by a passion for Node and its community.</p>
           <div className="section-speakers__data">
             <h3 className="section-speakers__name">Anna Henningsen</h3>
-            <a
-              href="#" 
-              className="section-speakers__social  icon-twitter"
-              >
-            </a>
+            <button className="section-speakers__social icon-twitter" />
           </div>
 
         </article>
 
         <article className="section-speakers__content">
-          
+
           <figure className="section-speakers__img">
-              <Speaker4 />
+            <Speaker4 />
           </figure>
           <p className="section-speakers__description">Over the last 2 years, Anna has been one of the most active contributors to Node.js core. Currently pursuing a Master’s degree in mathematics in Germany, she is fueled by a passion for Node and its community.</p>
           <div className="section-speakers__data">
             <h3 className="section-speakers__name">Anna Henningsen</h3>
-            <a
-              href="#" 
-              className="section-speakers__social icon-twitter"
-              >
-            </a>
+            <button className="section-speakers__social icon-twitter" />
           </div>
-
         </article>
-
       </div>
-
     </div>
-
   </section>
-
 )
 
 export default Speakers
