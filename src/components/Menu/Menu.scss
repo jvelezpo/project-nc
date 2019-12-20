@@ -1,13 +1,13 @@
 .menu-component {
   &.menu {
     text-transform: uppercase;
-    padding: 40px 15px;
+    padding: 45px 12px;
     height: 350px;
-    background: #258a45c7;
+    background: #258a45b7;
     display: block;
     position: fixed;
     top: 20%;
-    color: #E6D027;
+    color: var(--four);
     clip-path: polygon(0 0, 100% 15%, 100% 85%, 0% 100%);
     z-index: 1000;
 

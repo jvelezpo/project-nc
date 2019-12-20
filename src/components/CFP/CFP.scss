@@ -1,5 +1,86 @@
-.cfp-component {
-  &.cfp {
+.announcing-container{
+
+  @media screen and (min-width : 45em) {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-gap: var(--gutter);
+    
+    align-items: center;
+  }
+
+
+  .announcing-left{
+
+    
+    @media screen and (min-width : 64em) {
+      max-width: 80%;
+      padding-left: 90px;
+    }
+
+    &__title,
+    &__subtitle{
+      color: var(--v-secundary);
+    }
 
   }
+
+  .section-announcing{
+
+    @media screen and (min-width : 64em) {
+      max-width: 90%;
+      padding-right: 40px;
+    }
+
+    &__title{
+      margin-top: 0;
+      color: var(--four);
+      text-align: left;
+    }
+
+    &__subtitle{
+      margin-bottom: var(--gutter);
+      color: var(--secondary);
+      text-transform: uppercase;
+      font-size: 24px;
+      font-weight: var(--bold);
+    }
+
+    // campo de direccion Email
+    .sign-contact{
+      width: 100%;
+
+      &__title{
+        margin-top: var(--gutter);
+        margin-bottom: var(--gutter);
+        color: var(--third);
+        font-weight: var(--bold);
+        font-family: var(--font-title);
+      }
+
+      &__input{
+        margin-bottom: 0;
+        width: 73%;
+        height: initial;
+        padding: 10px 5px;
+        border: none;
+        font-size: 16px;
+        background-color: var(--v-primary);
+        color: var(--v-secundary);
+      }
+
+      .btn-sign{
+        display: inline-block;
+        background-color: var(--four);
+        cursor: pointer;
+        border: none;
+        padding: .5em .8em;
+        
+      }
+    }
+
+  }
+
+
 }

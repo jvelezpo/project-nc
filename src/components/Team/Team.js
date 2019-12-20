@@ -14,7 +14,7 @@ import Stiwar from "./images/team-stiwar";
 import "./Team.scss"
 
 const Team = () => (
-  <div className="team-component team">
+  <div className="team-component team" id="team">
     <div className="title">
       Team
     </div>
