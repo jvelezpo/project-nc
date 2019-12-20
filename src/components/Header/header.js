@@ -54,13 +54,8 @@ const Header = () => (
           </p>
         </div>
       </div>
-
-
     </div>
   </header>
-
-
-
 )
 
 Header.propTypes = {
