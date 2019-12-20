@@ -17,6 +17,7 @@ const ContactUs = () => (
             type="email"
             value=""
             aria-required="true"
+            aria-label="Email address"
             placeholder="Email address"
           ></input>
           <button type="submit">Sign up</button>
@@ -25,27 +26,30 @@ const ContactUs = () => (
       <div className="social">
         <div className="icons">
           <a
-            className="social-icon icon-twitter"
             href="https://twitter.com/NodeConfCo"
             target="__blank"
             rel="noopener noreferrer"
             aria-label="Twitter"
-          ></a>
+          >
+            <i className="social-icon icon-twitter"></i>
+          </a>
           <a
-            className="social-icon icon-instagram"
             href="https://www.instagram.com/nodeconf_co/"
             target="__blank"
             rel="noopener noreferrer"
             aria-label="Instagram"
-          ></a>
+          >
+            <i className="social-icon icon-instagram"></i>
+          </a>
 
           <a
-            className="social-icon icon-facebook"
             href="https://www.facebook.com/nodeconfco"
             target="__blank"
             rel="noopener noreferrer"
             aria-label="Facebook"
-          ></a>
+          >
+            <i className="social-icon icon-facebook"></i>
+          </a>
 
           <div className="text">
             <div className="contact-us">CONTACT US</div>

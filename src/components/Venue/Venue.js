@@ -23,6 +23,7 @@ const Venue = () => (
         href="https://www.diezhotel.com/"
         target="__blank"
         rel="noopener noreferrer"
+        aria-label="Hotel Diez"
       >
         <figure className="hotel">
           <Hotel10 />
