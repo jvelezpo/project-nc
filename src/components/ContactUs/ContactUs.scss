@@ -94,13 +94,6 @@
             padding: var(--gutter);
           }
 
-          @media only screen and (min-width: 320px) {
-            width: 35px;
-            height: 35px;
-            padding: var(--gutter);
-            margin-right: 7px;
-          }
-
           @media only screen and (max-width: 320px) {
             width: 35px;
             height: 35px;
@@ -162,6 +155,12 @@
           display: flex;
           margin: 10px;
           text-decoration: none;
+          align-items: center;
+          justify-content: flex-start;
+          width: 100%;
+          button {
+            padding: 0;
+          }
         }
 
         .text {

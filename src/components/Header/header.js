@@ -36,17 +36,22 @@ const Header = () => (
           <h3 className="calendar__month">july</h3>
           <p className="calendar__data ">
             <span className="calendar__info">day</span>
+          </p>
+          <p className="calendar__day">
+            10
             <span className="calendar__info">th</span>
           </p>
-          <p className="calendar__day">10</p>
         </div>
         <div className="calendar__content">
           <h3 className="calendar__month">july</h3>
           <p className="calendar__data ">
             <span className="calendar__info">day</span>
+
+          </p>
+          <p className="calendar__day">
+            11
             <span className="calendar__info">th</span>
           </p>
-          <p className="calendar__day">11</p>
         </div>
       </div>
 

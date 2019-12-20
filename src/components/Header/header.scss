@@ -184,6 +184,7 @@
         text-align: center;
         color: var(--four);
         background-color: var(--primary);
+        padding: 7px 0;
       }
 
       &__data{
@@ -191,6 +192,8 @@
         justify-content: space-between;
         padding: 0 var(--gutter);
         font-size: 18px;
+        display: flex;
+        justify-content: center;
 
         @media screen and (min-width : 30em) {
           font-size: 24px;
@@ -203,6 +206,7 @@
 
         &__info{
           color: var(--four);
+          font-size: 20px;
         }
 
         &__format,
@@ -216,6 +220,8 @@
           padding: 0 var(--gutter);
           text-align: right;
           font-size: 40px;
+          line-height: 1;
+          padding-bottom: 15px;
 
           @media screen and (min-width : 30em) {
             font-size: 48px;
