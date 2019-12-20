@@ -16,6 +16,7 @@
     
     @media screen and (min-width : 64em) {
       max-width: 80%;
+      padding-left: 90px;
     }
 
     &__title,
@@ -29,12 +30,13 @@
 
     @media screen and (min-width : 64em) {
       max-width: 90%;
+      padding-right: 40px;
     }
 
     &__title{
       margin-top: 0;
       color: var(--four);
-      text-align: right;
+      text-align: left;
     }
 
     &__subtitle{

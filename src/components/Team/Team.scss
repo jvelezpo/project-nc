@@ -11,11 +11,13 @@
     }
 
     .images {
-      padding: var(--gutter);
+      // padding: var(--gutter);
       background-color: var(--primary);
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
+      padding-right: 40px;
+      padding-left: 75px;
 
       .gatsby-image-wrapper {
         width: 300px;
