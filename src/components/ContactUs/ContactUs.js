@@ -2,11 +2,9 @@ import React, { useState } from "react"
 
 import "./ContactUs.scss"
 
-
 const ContactUs = () => {
-  
-  const [email, setEmail] = useState('')
-  
+  const [email, setEmail] = useState("")
+
   return (
     <div className="contact-us-component contact-us" id="contactUS">
       <div className="description"></div>
@@ -30,19 +28,15 @@ const ContactUs = () => {
         </div>
         <div className="social">
           <div className="icons">
-            <button
-              onClick={() => window.open('https://twitter.com/NodeConfCo', '_blank')}
-              className="social-icon icon-twitter"
-              />
-            <button
-              onClick={() => window.open('https://www.instagram.com/nodeconf_co/', '_blank')}
-              className="social-icon icon-instagram"
-            />
-            <button
-              onClick={() => window.open('https://www.facebook.com/nodeconfco', '_blank')}
-              className="social-icon icon-facebook"
-            />
-
+            <a href="https://twitter.com/NodeConfCo" target="__blank">
+              <i className="social-icon icon-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com/nodeconf_co" target="__blank">
+              <i className="social-icon icon-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/nodeconfco" target="__blank">
+              <i className="social-icon icon-facebook"></i>
+            </a>
           </div>
           <div className="text">
             <div className="contact-us">CONTACT US</div>
@@ -52,7 +46,7 @@ const ContactUs = () => {
               rel="noopener noreferrer"
             >
               hola@nodeconf.co
-              </a>
+            </a>
           </div>
         </div>
       </div>
