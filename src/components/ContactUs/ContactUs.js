@@ -30,16 +30,16 @@ const ContactUs = () => {
         </div>
         <div className="social">
           <div className="icons">
-            <button
-              onClick={() => window.open('https://twitter.com/NodeConfCo', '_blank')}
+            <a
+              onClick={() => window.open('https://twitter.com/NodeConfCo', '__blank')}
               className="social-icon icon-twitter"
               />
-            <button
-              onClick={() => window.open('https://www.instagram.com/nodeconf_co/', '_blank')}
+            <a
+              onClick={() => window.open('https://www.instagram.com/nodeconf_co/', '__blank')}
               className="social-icon icon-instagram"
             />
-            <button
-              onClick={() => window.open('https://www.facebook.com/nodeconfco', '_blank')}
+            <a
+              onClick={() => window.open('https://www.facebook.com/nodeconfco', '__blank')}
               className="social-icon icon-facebook"
             />
 

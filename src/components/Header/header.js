@@ -29,7 +29,7 @@ const Header = () => (
         <h1 className="title  header-title">colombia</h1>
         <p className="subtitle  header-subtitle">NodeConfCo 2020</p>
 
-        <button className="btn-cta">Saber más</button>
+        {/* <button className="btn-cta">Saber más</button> */}
       </div>
 
       <div className="header-right  calendar">
@@ -53,7 +53,6 @@ const Header = () => (
             11
             <span className="calendar__info">th</span>
           </p>
-          <p className="calendar__day">11</p>
         </div>
       </div>
     </div>
