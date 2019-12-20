@@ -53,6 +53,7 @@ const Header = () => (
             11
             <span className="calendar__info">th</span>
           </p>
+          <p className="calendar__day">11</p>
         </div>
       </div>
     </div>
