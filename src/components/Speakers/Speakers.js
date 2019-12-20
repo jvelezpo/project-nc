@@ -10,7 +10,7 @@ import "./Speakers.scss"
 
 const Speakers = () => (
 
-  <section className="speakers-container  l-container--full  l-inner-p">
+  <section className="speakers-container  l-container--full  l-inner-p" id="speakers">
 
     <div className="section-speakers  l-container">
 

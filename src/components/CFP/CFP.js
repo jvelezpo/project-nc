@@ -4,7 +4,7 @@ import "./CFP.scss"
 
 const CFP = () => (
 
-  <section className="announcing-container  l-container  l-inner-p">
+  <section className="announcing-container  l-container  l-inner-p" id="cfp">
 
     <aside className="announcing-left  aside-data">
       <h2 className="announcing-left__title  aside-data__title">0.2</h2>
