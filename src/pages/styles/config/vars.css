@@ -6,7 +6,7 @@
     --four : #E6D027;
   /*  Colores variantes */
     --v-primary : #EBEBEB;
-    --v-secundary : #707070;
+    --v-secondary : #707070;
   /* Color de parrafo */
     --p-primary : #121112;
   
@@ -19,7 +19,7 @@
     --bold : 700;
 
     /* Layout */
-    --gutter: 16px;
+    --gutter: 18px;
     --max-width: 1366px;
   
   }
