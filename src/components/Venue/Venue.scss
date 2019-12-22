@@ -1,7 +1,7 @@
 .venue-component {
   &.venue {
     display: flex;
-    margin: 50px 0;
+    margin: 80px 0;
     @media only screen and (max-width: 1024px) {
       flex-direction: column-reverse;
     }
@@ -38,7 +38,7 @@
       .subtitle {
         font-family: var(--font-subtitle);
         font-weight: var(--semibold);
-        font-size: 32px;
+        font-size: 28px;
         color: var(--v-primary);
       }
       .hotel {

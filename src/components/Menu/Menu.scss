@@ -1,22 +1,84 @@
 .menu-component {
-  &.menu {
+  .menu {
     text-transform: uppercase;
     padding: 45px 12px;
     height: 350px;
     background: #258a45b7;
-    display: block;
     position: fixed;
     top: 20%;
-    color: var(--four);
     clip-path: polygon(0 0, 100% 15%, 100% 85%, 0% 100%);
     z-index: 1000;
+    display: flex;
+    flex-direction: column;
 
     .link-section {
       cursor: pointer;
       width: fit-content;
       line-height: 2;
+      color: var(--four);
       &:hover {
         border-bottom: 2px solid;
+      }
+    }
+
+    @media only screen and (max-width: 575px) {
+      display: none;
+    }
+  }
+
+  .menu-mobile {
+    display: none;
+    
+    @media only screen and (max-width: 575px) {
+      display: initial;
+
+      #myLinks {
+        opacity: 0;
+        background: var(--primary);
+        color: var(--v-primary);
+        padding: 20px 0px;
+        position: fixed;
+        top: 0;
+        z-index: 100;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        border-bottom: 1px solid #fff;
+        transition: all 0.5s ease-in-out;
+        transform: translateY(-130%);
+     
+
+        &.open {
+          opacity: 1;
+          transform: translateY(0);
+        }
+
+        .link-section {
+          padding: 14px 16px;
+          text-decoration: none;
+          font-size: 20px;
+          font-weight: 500;
+          color: var(--v-primary);
+          &:hover{
+            color: var(--four);
+          }
+        }
+      }
+    }
+
+    .icon {
+      position: fixed;
+      right: 1px;
+      top: 0;
+      z-index: 100;
+      font-size: 40px;
+      background: none;
+      border: none;
+      color: var(--p-primary);
+      &.focused {
+        background: none;
+        border: none;
+        color: var(--four);
       }
     }
   }
