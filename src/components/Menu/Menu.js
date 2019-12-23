@@ -1,7 +1,5 @@
 import React, { useState } from "react"
 
-import { Link } from "gatsby"
-
 import "./Menu.scss"
 
 const Menu = () => {
@@ -18,51 +16,51 @@ const Menu = () => {
   const menuItems = () => {
     return (
       <React.Fragment>
-        <Link className="link-section" to="#home" onClick={() => closeMobileMenu()}>
+        <a className="link-section" href="#home" onClick={() => closeMobileMenu()}>
           Start
-        </Link>
-        <Link
+        </a>
+        <a
           className="link-section"
-          to="#cfp"
+          href="#cfp"
           onClick={() => closeMobileMenu()}
         >
           Announcing
-        </Link>
-        <Link
+        </a>
+        <a
           className="link-section"
-          to="#speakers"
+          href="#speakers"
           onClick={() => closeMobileMenu()}
         >
           Speakers
-        </Link>
-        <Link
+        </a>
+        <a
           className="link-section"
-          to="#venue"
+          href="#venue"
           onClick={() => closeMobileMenu()}
         >
           Venue
-        </Link>
-        <Link
+        </a>
+        <a
           className="link-section"
-          to="#about"
+          href="#about"
           onClick={() => closeMobileMenu()}
         >
           About
-        </Link>
-        <Link
+        </a>
+        <a
           className="link-section"
-          to="#team"
+          href="#team"
           onClick={() => closeMobileMenu()}
         >
           Team
-        </Link>
-        <Link
+        </a>
+        <a
           className="link-section"
-          to="#contactUS"
+          href="#contactUS"
           onClick={() => closeMobileMenu()}
         >
           Stay tuned
-        </Link>
+        </a>
       </React.Fragment>
     )
   }
@@ -74,8 +72,8 @@ const Menu = () => {
         <div id="myLinks" className={menuMobileOpen ? "open" : "close"}>
           {menuItems()}
         </div>
-        <button class="icon" onClick={menuMobile}>
-          <i class="icon-three-bars"></i>
+        <button className={menuMobileOpen ? "icon focused" : "icon"} onClick={menuMobile}>
+          <i className="icon-three-bars"></i>
         </button>
       </div>
     </div>

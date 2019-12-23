@@ -75,7 +75,7 @@
       background: none;
       border: none;
       color: var(--p-primary);
-      &:focus {
+      &.focused {
         background: none;
         border: none;
         color: var(--four);

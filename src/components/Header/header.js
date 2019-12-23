@@ -29,29 +29,22 @@ const Header = () => (
         <h1 className="title  header-title">colombia</h1>
         <p className="subtitle  header-subtitle">NodeConfCo 2020</p>
 
-        {/* <button className="btn-cta">Saber más</button> */}
       </div>
 
       <div className="header-right  calendar">
+
         <div className="calendar__content">
           <h3 className="calendar__month">july</h3>
-          <p className="calendar__data ">
-            <span className="calendar__info">day</span>
-          </p>
+          <p className="calendar__data">day</p>
           <p className="calendar__day">
-            10
-            <span className="calendar__info">th</span>
+            10<span className="calendar__th">th</span>
           </p>
         </div>
         <div className="calendar__content">
           <h3 className="calendar__month">july</h3>
-          <p className="calendar__data ">
-            <span className="calendar__info">day</span>
-
-          </p>
+          <p className="calendar__data">day</p>
           <p className="calendar__day">
-            11
-            <span className="calendar__info">th</span>
+            11<span className="calendar__th">th</span>
           </p>
         </div>
       </div>
