@@ -1,11 +1,17 @@
 .speakers-container {
-  background: radial-gradient(
-    circle closest-side at 50% 50%,
-    #2d9983 0%,
-    #258a45 100%
-  );
-  clip-path: polygon(50% 0%, 100% 2%, 100% 98%, 50% 100%, 0 98%, 0 2%);
-  opacity: 0.9;
+
+  .triangle-top {
+    clip-path: polygon(50% 0%, 0% 101%, 100% 101%);
+    height: 100px;
+    width: 100%;
+    background-color: var(--primary);
+  }
+  .triangle-bottom {
+    clip-path: polygon(50% 100%, 0 -1%, 100% -1%);
+    height: 100px;
+    width: 100%;
+    background-color: var(--primary);
+  }
 
   .content-figure {
     @media screen and (max-width: 1024px) {
@@ -65,9 +71,15 @@
 }
 
 .section-speakers {
+  background-color: var(--primary);
   &__title {
     padding-top: 0;
     color: var(--four);
+    
+    &.section__title {
+      margin: 0;
+      padding: 1em 0;
+    }
   }
 
   &__content {
