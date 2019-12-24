@@ -21,6 +21,10 @@
         width: 300px;
         height: 300px;
         margin: 5px;
+        @media only screen and (max-width: 1024px) {
+          width: 280px;
+          height: 290px;
+        }
       }
       .section-team {
         &__content {
@@ -38,15 +42,18 @@
           background-color: var(--p-primary);
           opacity: 0.9;
         }
-        
+
         &__name {
           font-family: var(--font-subtitle);
           font-weight: var(--normal);
-          font-size: 1.3rem;
-          margin-top: 8px;
+          font-size: 18px;
+          margin-top: 15px;
           letter-spacing: 1px;
+          @media only screen and (max-width: 1024px) {
+            font-size: 1.1rem;
+          }
         }
-        
+
         &__social {
           color: var(--four);
           font-size: 34px;

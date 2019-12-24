@@ -2,18 +2,19 @@
 
   @media screen and (min-width : 55em) {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     grid-template-rows: 1fr;
-    grid-gap: var(--gutter);
-    
+    // grid-gap: var(--gutter);
     align-items: center;
+    align-content: center;
+ 
   }
-
 
   .announcing-left{
     
     @media screen and (min-width : 64em) {
       max-width: 80%;
+      
     }
 
     &__title,
@@ -24,14 +25,19 @@
   }
 
   .section-announcing{
-
+    line-height: 2;
+    @media only screen and (min-width : 1024px){
+      margin-left: 80px;
+    }
+    
     @media screen and (min-width : 64em) {
       max-width: 90%;
     }
-
+    
     &__title{
       color: var(--four);
       text-align: left;
+
     }
 
     &__subtitle{
