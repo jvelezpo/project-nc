@@ -21,32 +21,34 @@
       }
     }
 
-    @media only screen and (max-width: 575px) {
+    @media only screen and (max-width: 1354px) {
       display: none;
     }
   }
 
   .menu-mobile {
     display: none;
-    
-    @media only screen and (max-width: 575px) {
-      display: initial;
 
+    @media only screen and (max-width: 1354px) {
+      display: initial;
+      
       #myLinks {
         opacity: 0;
-        background: var(--primary);
+        background-color: darken(#258a45b7, 8);
+        clip-path: polygon(50% 0%, 100% 0, 100% 90%, 50% 100%, 0 90%, 0 0);
+
         color: var(--v-primary);
-        padding: 20px 0px;
+        padding: 50px 0px;
         position: fixed;
         top: 0;
         z-index: 100;
         width: 100%;
         display: flex;
         flex-direction: column;
-        border-bottom: 1px solid #fff;
         transition: all 0.5s ease-in-out;
         transform: translateY(-130%);
-     
+        text-align: center;
+        text-transform: uppercase;
 
         &.open {
           opacity: 1;
@@ -54,13 +56,17 @@
         }
 
         .link-section {
+          margin: 0 auto;
+          width: 50%;
           padding: 14px 16px;
           text-decoration: none;
           font-size: 20px;
           font-weight: 500;
-          color: var(--v-primary);
+          color: var(--four);
+          transition: .3s ease-in;
           &:hover{
-            color: var(--four);
+            color: var(--v-primary);
+            background-color: var(--four);
           }
         }
       }
@@ -70,15 +76,24 @@
       position: fixed;
       right: 1px;
       top: 0;
-      z-index: 100;
-      font-size: 40px;
-      background: none;
+      font-size: 35px;  
+      background-color: lighten(#258A45, .1);
+      color: var(--four);
       border: none;
-      color: var(--p-primary);
+      z-index: 100;
+      clip-path: polygon(50% 0%, 100% 0, 100% 80%, 50% 100%, 0 80%, 0 0);
+
+      & i {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 3px 5px 8px 5px;
+      }
+
       &.focused {
-        background: none;
+        background: var(--primary);
         border: none;
-        color: var(--four);
+        color: var(--v-primary);
       }
     }
   }
