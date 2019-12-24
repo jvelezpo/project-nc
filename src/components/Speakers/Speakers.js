@@ -9,9 +9,7 @@ import "./Speakers.scss"
 
 const Speakers = () => (
 
-  <section className="speakers-container" id="speakers">
-
-    <div className="triangle-top" />
+  <section className="speakers-container  l-inner-p" id="speakers">
     <div className="section-speakers">
       <h2 className="section-speakers__title  section__title">speakers</h2>
 
@@ -97,7 +95,6 @@ const Speakers = () => (
         </article>
       </div>
     </div>
-    <div className="triangle-bottom" />
   </section>
 )
 
