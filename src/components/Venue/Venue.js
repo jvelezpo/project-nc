@@ -7,12 +7,12 @@ import LogoRutaN from "../images/logo_rutaN"
 import "./Venue.scss"
 
 const Venue = () => (
-  <div className="venue-component venue" id="venue">
+  <section className="venue-component venue" id="venue">
     <div className="rutan-image">
       <RutaN />
     </div>
     <div className="content">
-      <div className="title">Venue</div>
+      <div className="title section__title">Venue</div>
       <div>
       <a
         href="https://www.rutanmedellin.org/es/"
@@ -46,7 +46,7 @@ const Venue = () => (
         Reservations
       </a>
     </div>
-  </div>
+  </section>
 )
 
 export default Venue
