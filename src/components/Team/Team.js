@@ -15,9 +15,9 @@ import Jorman from "./images/team-jorman"
 import "./Team.scss"
 
 const Team = () => (
-  <div className="team-component team" id="team">
-    <div className="title">Team</div>
-    <div className="images">
+  <section className="team-component team" id="team">
+    <h2 className="title  section__title">team</h2>
+    <div className="images  l-container">
       <article className="section-team__content">
         <figure className="section-team__img">
           <Adrian />
@@ -195,8 +195,7 @@ const Team = () => (
         </div>
       </article>
     </div>
-    <div className="triangle" />
-  </div>
+  </section>
 )
 
 export default Team
