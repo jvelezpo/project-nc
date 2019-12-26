@@ -12,7 +12,7 @@ const Venue = () => (
       <RutaN />
     </div>
     <div className="content">
-      <div className="title">Venue</div>
+      <div className="title section__title">Venue</div>
       <div>
       <a
         href="https://www.rutanmedellin.org/es/"
