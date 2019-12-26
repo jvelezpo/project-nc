@@ -1,6 +1,8 @@
 .speakers-container {
   background-color: var(--primary);
-  clip-path: polygon(50% 0%, 100% 2%, 100% 98%, 50% 100%, 0 98%, 0 2%);
+  clip-path: polygon(50% 0%, 100% 5%, 100% 95%, 50% 100%, 0 95%, 0 5%);
+  padding-top: 90px;
+  padding-bottom: 90px;
 
   .content-figure {
     @media screen and (max-width: 1024px) {
