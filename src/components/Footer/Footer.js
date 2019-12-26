@@ -4,8 +4,8 @@ import "./Footer.scss"
 export default class Footer extends Component {
   render() {
     return (
-      <div className="footer-component">
-        NodeConf Colombia is an event by Mantid LLC -{" "}
+      <footer className="footer-component l-container--full  l-inner-p">
+        <p>NodeConf Colombia is an event by Mantid LLC -&nbsp;</p> 
         <a
           href="http://jsconf.com/codeofconduct.html"
           target="__blank"
@@ -13,7 +13,7 @@ export default class Footer extends Component {
         >
           Code of conduct
         </a>
-      </div>
+      </footer>
     )
   }
 }
