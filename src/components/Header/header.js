@@ -47,7 +47,6 @@ const Header = () => (
             11<span className="calendar__th">th</span>
           </p>
         </div>
-
       </div>
     </div>
   </header>

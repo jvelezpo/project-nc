@@ -3,46 +3,20 @@ import React from "react"
 import "./CFP.scss"
 
 const CFP = () => (
-
   <section className="announcing-container  l-container  l-inner-p" id="cfp">
-
-    <aside className="announcing-left  aside-data">
-      <h2 className="announcing-left__title  aside-data__title">0.2</h2>
-      <p className="announcing-left__subtitle aside-data__subtitle">
-        Lorem ipsum dolor sit amet
-      </p>
-      <p className="announcing-left__description aside-data__description">
-        consectetur adipiscing elit. Vivamus lacinia quis arcu non elementum.
-        Phasellus vestibulum rutrum tincidunt. Maecenas vitae ex turpis.
-      </p>
-      <p className="announcing-left__description aside-data__description">
-        consectetur adipiscing elit. Vivamus lacinia quis arcu non elementum.
-        Phasellus vestibulum rutrum tincidunt. Maecenas vitae ex turpis.
-      </p>
-    </aside>
-
     <div className="section-announcing">
-      <h2 className="section-announcing__title  section__title">announcing</h2>
-      <p className="section-announcing__subtitle">call for speaker</p>
+      <h2 className="section-announcing__title  section__title">
+        call for speakers
+      </h2>
+      <p className="section-announcing__subtitle">Got a talk idea? We want to see it!</p> 
       <p className="section-announcing__description">
-        consectetur adipiscing elit. Vivamus lacinia quis arcu non elementum.
-        Phasellus vestibulum rutrum tincidunt. Maecenas vitae ex turpis.
-        consectetur adipiscing elit. Vivamus lacinia quis arcu non elementum.
-        Phasellus vestibulum rutrum tincidunt. Maecenas vitae ex turpis.
+         We want you to be part of NodeConf
+        Colombia 2020; We are the first exclusive Node.js conference in
+        Colombia, where community members from around the world come together to
+        learn and share information about the latest trends and technologies in
+        Node.js development. Apply now. This call for presenters closes at 11:59
+        PM EST on February 28TH, 2020.
       </p>
-
-      <div className="sign-contact">
-        <h3 className="sign-contact__title">Sign up for updates</h3>
-        <form>
-          <input
-            className="sign-contact__input"
-            type="email"
-            placeholder="Email address..."
-            aria-label="Email address..."
-          />
-          <input className="btn-sign" type="submit" value="sign up" />
-        </form>
-      </div>
     </div>
   </section>
 )

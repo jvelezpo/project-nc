@@ -6,9 +6,10 @@
       font-size: 48px/57px;
       text-align: center;
       color: var(--four);
-      padding: var(--gutter);
       background-color: var(--primary);
       text-transform: uppercase;
+      padding-bottom: 60px;
+      padding-top: 30px;
     }
 
     .images {
@@ -19,14 +20,56 @@
 
       .gatsby-image-wrapper {
         width: 300px;
+        height: 300px;
         margin: 5px;
+        @media only screen and (max-width: 1024px) {
+          width: 280px;
+          height: 290px;
+        }
+      }
+      .section-team {
+        &__content {
+          position: relative;
+          color: var(--v-primary);
+        }
+        &__data {
+          position: absolute;
+          width: 97%;
+          height: 83px;
+          top: 85%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          text-align: center;
+          background-color: var(--p-primary);
+          opacity: 0.9;
+        }
+
+        &__name {
+          font-family: var(--font-subtitle);
+          font-weight: var(--normal);
+          font-size: 18px;
+          margin-top: 15px;
+          letter-spacing: 1px;
+          @media only screen and (max-width: 1024px) {
+            font-size: 1.1rem;
+          }
+        }
+
+        &__social {
+          color: var(--four);
+          font-size: 34px;
+          text-decoration: none;
+          background: none;
+          border: none;
+          cursor: pointer;
+        }
       }
     }
-    .triangle {
-      clip-path: polygon(50% 100%, 0 -1%, 100% -1%);
-      height: 100px;
-      width: 100%;
-      background-color: var(--primary);
-    }
+  }
+  .triangle {
+    clip-path: polygon(50% 100%, 0 -1%, 100% -1%);
+    height: 100px;
+    width: 100%;
+    background-color: var(--primary);
   }
 }

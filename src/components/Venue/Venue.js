@@ -2,6 +2,7 @@ import React from "react"
 
 import RutaN from "../images/ruta-n"
 import Hotel10 from "../images/hotel10"
+import LogoRutaN from "../images/logo_rutaN"
 
 import "./Venue.scss"
 
@@ -13,12 +14,20 @@ const Venue = () => (
     <div className="content">
       <div className="title">Venue</div>
       <div>
-        consectetur adipiscing elit. Vivamus lacinia quis arcu non elementum.
-        Phasellus vestibulum rutrum tincidunt. Maecenas vitae ex turpis.
-        consectetur adipiscing elit. Vivamus lacinia quis arcu non elementum.
-        Phasellus vestibulum rutrum tincidunt. Maecenas vitae ex turpis.
+      <a
+        href="https://www.rutanmedellin.org/es/"
+        target="__blank"
+        rel="noopener noreferrer"
+        aria-label="Logo Ruta N"
+      >
+        <figure className="logo">
+          <LogoRutaN />
+        </figure>
+      </a>
+        Complejo Ruta N Calle 67 N° 52-20 Medellín - Colombia. Strategic
+        location, with easy access to all of the city's points of interest.
       </div>
-      <div className="subtitle">Hotel Recommend</div>
+      <div className="subtitle">Hotel We Recommend</div>
       <a
         href="https://www.diezhotel.com/"
         target="__blank"
@@ -34,7 +43,7 @@ const Venue = () => (
         className="reservation"
         target="__blank"
       >
-        Reservation Hotel
+        Reservations
       </a>
     </div>
   </div>

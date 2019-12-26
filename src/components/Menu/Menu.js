@@ -24,7 +24,7 @@ const Menu = () => {
           href="#cfp"
           onClick={() => closeMobileMenu()}
         >
-          Announcing
+          Cfp
         </a>
         <a
           className="link-section"
@@ -72,7 +72,7 @@ const Menu = () => {
         <div id="myLinks" className={menuMobileOpen ? "open" : "close"}>
           {menuItems()}
         </div>
-        <button className={menuMobileOpen ? "icon focused" : "icon"} onClick={menuMobile}>
+        <button className={menuMobileOpen ? "icon focused" : "icon"} onClick={menuMobile} aria-label="Button menu mobile">
           <i className="icon-three-bars"></i>
         </button>
       </div>

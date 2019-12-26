@@ -21,6 +21,7 @@ const ContactUs = () => {
               value={email}
               onChange={e => setEmail(e.target.value)}
               aria-required="true"
+              aria-label="Email address"
               placeholder="Email address"
             ></input>
             <button type="submit">Sign up</button>
@@ -28,13 +29,13 @@ const ContactUs = () => {
         </div>
         <div className="social">
           <div className="icons">
-            <a href="https://twitter.com/NodeConfCo" target="__blank">
+            <a href="https://twitter.com/NodeConfCo" target="__blank" aria-label="icon-twitter">
               <i className="social-icon icon-twitter"></i>
             </a>
-            <a href="https://www.instagram.com/nodeconf_co" target="__blank">
+            <a href="https://www.instagram.com/nodeconf_co" target="__blank" aria-label="icon-instagram">
               <i className="social-icon icon-instagram"></i>
             </a>
-            <a href="https://www.facebook.com/nodeconfco" target="__blank">
+            <a href="https://www.facebook.com/nodeconfco" target="__blank" aria-label="icon-facebook">
               <i className="social-icon icon-facebook"></i>
             </a>
           </div>
