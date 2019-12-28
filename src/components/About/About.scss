@@ -1,37 +1,16 @@
 .about-component {
+  clip-path: polygon(50% 0%, 100% 5%, 100% 100%, 50% 100%, 0 100%, 0 5%);
+  background-color: var(--primary);
+
   &.about {
-    .triangle {
-      clip-path: polygon(50% 0%, 0% 101%, 100% 101%);
-      height: 100px;
-      width: 100%;
-      background-color: var(--primary);
-    }
 
     .title {
-      background-color: var(--primary);
-      text-align: center;
-      font-family: var(--font-title);
-      font-weight: var(--bold);
-      font-size: 48px/57px;
       color: var(--four);
-      padding: var(--gutter);
-      text-transform: uppercase;
     }
 
     .description {
-      text-align: center;
-      font-family: var(--font-subtitle);
-      font-weight: var(--normal);
-      font-size: 22px;
       color: var(--v-primary);
-      background-color: var(--primary);
-      display: flex;
-      justify-content: center;
-      padding: var(--gutter);
-      .content {
-        padding: var(--gutter);
-        max-width: 1000px;
-      }
+      font-size: 18px;
     }
   }
 }

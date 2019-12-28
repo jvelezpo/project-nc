@@ -6,10 +6,9 @@ const ContactUs = () => {
   const [email, setEmail] = useState("")
 
   return (
-    <div className="contact-us-component contact-us" id="contactUS">
-      <div className="description"></div>
-      <div className="stay-tuned">
-        <div className="title">stay tuned</div>
+    <section className="contact-us-component contact-us  l-container" id="contactUS">
+      <div className="stay-tuned  l-inner-p">
+        <h2 className="title  section__title">stay tuned</h2>
         <div className="email">
           <form
             action="https://nodeconf.us18.list-manage.com/subscribe/post?u=33c93ca7e73c6c27cd0325b9f&amp;id=e71faec96c"
@@ -40,7 +39,7 @@ const ContactUs = () => {
             </a>
           </div>
           <div className="text">
-            <div className="contact-us">CONTACT US</div>
+            <h3 className="contact-us">CONTACT US</h3>
             <a
               className="nodeconf-email"
               href="mailto:hola@nodeconf.co"
@@ -51,7 +50,7 @@ const ContactUs = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 
