@@ -80,6 +80,10 @@
   }
 
   &__content {
+    opacity: 0.8;
+    &:hover {
+      opacity: 1;
+    }
     position: relative;
     color: var(--v-primary);
     clip-path: polygon(50% 0%, 80% 0, 100% 50%, 80% 100%, 20% 100%, 0 50%, 20% 0);
@@ -154,6 +158,9 @@
     transition: .2s ease-in-out;
     &:hover{
       transform: rotate(-50deg);
+    }
+    &:focus {
+      outline: none;
     }
   }
 }
