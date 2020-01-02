@@ -16,6 +16,22 @@ const Speakers = () => (
       <div className="content-figure">
         <article className="section-speakers__content">
           <figure className="section-speakers__img">
+            <Beth />
+          </figure>
+          <div className="section-speakers__data">
+            <h3 className="section-speakers__name">Beth Griggs</h3>
+            <a
+              className="section-speakers__social icon-twitter"
+              aria-label="Twitter_Speaker"
+              href="https://twitter.com/BethGriggs_"
+              target="_blank"
+              rel="noopener noreferrer"
+            />
+          </div>
+        </article>
+
+        <article className="section-speakers__content">
+          <figure className="section-speakers__img">
             <Indutny />
           </figure>
           <div className="section-speakers__data">
@@ -32,14 +48,14 @@ const Speakers = () => (
 
         <article className="section-speakers__content">
           <figure className="section-speakers__img">
-            <Beth />
+            <Guillermo />
           </figure>
           <div className="section-speakers__data">
-            <h3 className="section-speakers__name">Beth Griggs</h3>
+            <h3 className="section-speakers__name">Guillermo Rauch</h3>
             <a
               className="section-speakers__social icon-twitter"
               aria-label="Twitter_Speaker"
-              href="https://twitter.com/BethGriggs_"
+              href="https://twitter.com/rauchg"
               target="_blank"
               rel="noopener noreferrer"
             />
@@ -62,21 +78,7 @@ const Speakers = () => (
           </div>
         </article>
 
-        <article className="section-speakers__content">
-          <figure className="section-speakers__img">
-            <Guillermo />
-          </figure>
-          <div className="section-speakers__data">
-            <h3 className="section-speakers__name">Guillermo Rauch</h3>
-            <a
-              className="section-speakers__social icon-twitter"
-              aria-label="Twitter_Speaker"
-              href="https://twitter.com/rauchg"
-              target="_blank"
-              rel="noopener noreferrer"
-            />
-          </div>
-        </article>
+
       </div>
     </div>
   </section>
