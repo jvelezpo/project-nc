@@ -12,6 +12,15 @@ const About = () => (
       access to relevant information through talks, workshops, and great
       experiences with the Colombian Node community.
     </p>
+    <p className="description section__description pictures-2019">
+      Want to check out our 2019 event
+      <a
+        href="https://photos.app.goo.gl/U2KnhMY1g2eksbos8"
+        target="_blank"
+        className="pictures"
+        rel="noopener noreferrer"
+      >click here</a>
+    </p>
   </section>
 )
 
