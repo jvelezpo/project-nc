@@ -77,7 +77,22 @@ const Speakers = () => (
             />
           </div>
         </article>
-
+        
+        <article className="section-speakers__content">
+          <figure className="section-speakers__img">
+            <Juan />
+          </figure>
+          <div className="section-speakers__data">
+            <h3 className="section-speakers__name">Juan Arbol</h3>
+            <a
+              className="section-speakers__social icon-twitter"
+              aria-label="Twitter_Speaker"
+              href="https://twitter.com/soyjuanarbol"
+              target="_blank"
+              rel="noopener noreferrer"
+            />
+          </div>
+        </article>
 
       </div>
     </div>
